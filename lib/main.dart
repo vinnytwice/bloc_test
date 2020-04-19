@@ -1,5 +1,6 @@
 import 'package:bloc_test/blocA/blocA_event.dart';
 import 'package:bloc_test/blocB/blocB_event.dart';
+import 'package:bloc_test/error.dart';
 import 'package:bloc_test/simple_bloc_delegate.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -48,7 +49,7 @@ class MyApp extends StatelessWidget {
               child: Home(),
             );
           }
-          return Home();
+          return Error();
         },
       ),
     );

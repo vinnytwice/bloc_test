@@ -9,10 +9,11 @@ class BlocB extends Bloc<BlocBEvent, BlocBState> {
 
   Stream<BlocBState> mapEventToState(BlocBEvent event) async* {
     if (event is BlocBEvent1) {
-      print('BlocAEvent1 received');
+      print('BlocBEvent1 received');
+      yield BlocBState1();
     }
     if (event is BlocBEvent2) {
-      print('BlocAEvent2 received');
+      print('BlocBEvent2 received');
     }
   }
 }
