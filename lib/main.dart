@@ -37,12 +37,15 @@ class MyApp extends StatelessWidget {
             return MultiBlocProvider(
               providers: [
                 BlocProvider<BlocB>(
+                  lazy: false,
                     create: (context) =>
                         BlocB()..add(BlocBEvent1())..add(BlocBEvent2())),
                 BlocProvider<BlocC>(
+                  lazy: false,
                     create: (context) =>
                         BlocC()..add(BlocCEvent1())..add(BlocCEvent2())),
                 BlocProvider<BlocD>(
+                  lazy: false,
                     create: (context) =>
                         BlocD()..add(BlocDEvent1())..add(BlocDEvent2())),
               ],
