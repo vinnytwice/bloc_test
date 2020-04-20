@@ -1,6 +1,6 @@
 # bloc_test
 
-A new Flutter application.
+An app to test flutter_bloc package.
 
 ## Getting Started
 
